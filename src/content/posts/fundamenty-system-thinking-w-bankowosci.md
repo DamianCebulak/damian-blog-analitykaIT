@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-09-19T17:00:00Z
+pubDatetime: 2026-09-19T15:00:00Z
 title: Fundamenty System Thinking w transformacjach Core Banking
 slug: podstawy-myslenia-systemowego-w-bankowosci
 featured: true
