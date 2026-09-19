@@ -1,37 +1,24 @@
 ---
-title: "About"
-description: "A bit about me and this blog."
+title: "O tym cyfrowym ogrodzie"
+description: "Kilka słów o mnie, tym blogu i celach, jakie przed nim stawiam."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Witaj! Ta przestrzeń to mój **cyfrowy ogród** (*digital garden*) – żywy eksperyment służący do porządkowania wiedzy, testowania nowoczesnego stosu technologicznego oraz zgłębiania złożonych systemów społeczno-technicznych.
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+### Czym jest koncepcja Digital Garden?
+W przeciwieństwie do tradycyjnych blogów, gdzie posty są chronologicznymi, zamkniętymi artykułami (przypominającymi strumień wiadomości lub dziennik), **cyfrowy ogród** nawiązuje do formy non-linearnej bazy wiedzy. Notatki nie starzeją się tam tak szybko. Są stale pielęgnowane, rozwijane, uzupełniane i łączone ze sobą w siatkę powiązanych pojęć. To przestrzeń, w której treść ewoluuje razem z moim zrozumieniem tematu: od luźnych przemyśleń aż po ustrukturyzowane przewodniki.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+Jako Tech Team Lead i Starszy Analityk traktuję tego bloga jako poligon doświadczalny do dopracowywania koncepcji, dokumentowania wzorców architektonicznych i reflektowania nad wyzwaniami inżynieryjnymi. Część treści pomagają mi przygotować narzędzia sztucznej inteligencji, jednak zawsze staram się wnosić jak najwięcej od siebie, opierając materiały na moich realnych doświadczeniach, przemyśleniach i praktyce projektowej.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+Choć projekt powstał przede wszystkim jako osobista baza wiedzy, mam nadzieję, że te notatki, przewodniki i analizy pomogą również innym w obszarze **analizy biznesowej, analityki systemowej oraz transformacji cyfrowych**.
 
-## Features
+## Główne obszary zainteresowań
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+* **Core Banking i Architektura Korporacyjna:** Przeprowadzanie transformacji na dużą skalę, modernizacja systemów dziedziczonych (*legacy*) oraz projektowanie odpornych struktur IT.
+* **Myślenie systemowe (Systems Thinking):** Patrzenie poza odizolowane komponenty w celu zrozumienia dynamicznych interakcji zachodzących w ekosystemie przedsiębiorstwa.
+* **Ciągłe doskonalenie i Refleksja:** Stały rozwój kompetencji, wyciąganie wniosków z praktyki projektowej i pogłębianie zrozumienia technologii. A ponadto przenoszenie teorii do praktyki.
+* **Analiza i Autentyczność:** Rzetelne podejście do problemów oraz dzielenie się prawdziwymi doświadczeniami bez sztucznych fasad.
+* **Efektywna praca:** Poszukiwanie optymalnych ścieżek, narzędzi i nawyków wspierających codzienne działania inżynierskie i liderskie.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
 
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Jeśli te materiały okażą się dla Ciebie przydatne w Twojej zawodowej ścieżce, zapraszam do kontaktu lub wymiany myśli przez GitHub lub LinkedIn!
