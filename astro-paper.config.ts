@@ -24,7 +24,6 @@ export default defineAstroPaperConfig({
     showBackButton: true,
     editPost: {
       enabled: false,
-      url: "https://damian-blog-analityka-it.vercel.app/",
     },
     search: "pagefind",
   },
