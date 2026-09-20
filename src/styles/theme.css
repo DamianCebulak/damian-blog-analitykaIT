@@ -7,7 +7,10 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+
+  /* Nowe czcionki */
+  --font-app: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 /* Light theme values (Warm Beige & Organic Digital Garden) */
