@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     author: "Damian Cebulak",
     profile: "https://github.com/DamianCebulak",
     ogImage: "default-og.jpg",
-    lang: "pl",
+    lang: "en",
     timezone: "Europe/Warsaw",
     dir: "ltr",
   },
