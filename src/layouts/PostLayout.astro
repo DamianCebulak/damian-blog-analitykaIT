@@ -87,25 +87,26 @@ const structuredData = {
     />
   </Fragment>
 
-  <slot />
+<slot />
 
-  <!-- Automatyczna sekcja "Powiązane notatki" w cyfrowym ogrodzie -->
   {relatedPosts.length > 0 && (
-    <section class="mt-16 border-t border-border pt-8">
-      <h3 class="text-xl font-semibold tracking-wide mb-4">Powiązane notatki w ogrodzie</h3>
-      <ul class="grid gap-4 sm:grid-cols-2">
-        {relatedPosts.map(p => (
-          <li>
-            <a 
-              href={`/posts/${p.id}/`}
-              class="block p-4 rounded-lg border border-border bg-muted/20 hover:border-accent transition-all"
-            >
-              <h4 class="font-medium text-accent hover:underline">{p.data.title}</h4>
-              <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{p.data.description}</p>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div class="app-layout">
+      <section class="mt-16 border-t border-border pt-8">
+        <h3 class="text-xl font-semibold tracking-wide mb-4">Powiązane notatki w ogrodzie</h3>
+        <ul class="grid gap-4 sm:grid-cols-2">
+          {relatedPosts.map(p => (
+            <li>
+              <a 
+                href={`/posts/${p.id}/`}
+                class="block p-4 rounded-lg border border-border bg-muted/20 hover:border-accent transition-all"
+              >
+                <h4 class="font-medium text-accent hover:underline">{p.data.title}</h4>
+                <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{p.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   )}
 </Layout>
