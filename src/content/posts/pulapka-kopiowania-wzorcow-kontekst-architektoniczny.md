@@ -7,7 +7,7 @@ draft: false
 tags: [systems-thinking, enterprise-architecture, mental-models, core-banking]
 description: "Refleksja nad tym, dlaczego bezrefleksyjne przenoszenie nawyków i modeli myślenia między różnymi domenami IT prowadzi do błędów architektonicznych."
 related:
-
+ - architektura-poznawcza-modele-myslenia
 ---
 
 ## Kontekst a architektoniczna ślepota
@@ -37,3 +37,35 @@ Stwierdzenie, że specjalista od systemów transakcyjnych musi być z definicji 
 Kluczem do dojrzałej **architektury korporacyjnej** nie jest kurczowe trzymanie się jednego, uniwersalnego wzorca, do którego wszystko wydaje się pasować. Jest nią elastyczność, ciągła **refleksja** nad kontekstem biznesowym oraz gotowość do kwestionowania własnych przyzwyczajeń inżynieryjnych i stosowania zasad **myślenia systemowego** (*Systems Thinking*).
 
 *Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi przemyśleniami na temat **Systems Thinking** i praktyki architektonicznej.*
+
+---
+// Fragment logiki w PostDetails.astro (lub pliku układu posta)
+const { post } = Astro.props;
+const { related } = post.data;
+
+// Pobieramy wszystkie posty, aby odnaleźć powiązane
+const allPosts = await getCollection("posts");
+const relatedPosts = allPosts.filter(p => related?.includes(p.data.slug));
+---
+
+<!-- Reszta treści artykułu -->
+
+<!-- Sekcja Powiązane notatki (Digital Garden Links) -->
+{relatedPosts && relatedPosts.length > 0 && (
+  <section className="mt-12 border-t border-border pt-6">
+    <h3 className="text-xl font-semibold tracking-wide mb-4">Powiązane notatki w ogrodzie</h3>
+    <ul className="grid gap-3 sm:grid-cols-2">
+      {relatedPosts.map(p => (
+        <li>
+          <a 
+            href={`/posts/${p.data.slug}/`}
+            className="block p-4 rounded-lg border border-border bg-muted/30 hover:border-accent transition-all"
+          >
+            <h4 className="font-medium text-accent hover:underline">{p.data.title}</h4>
+            <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{p.data.description}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
