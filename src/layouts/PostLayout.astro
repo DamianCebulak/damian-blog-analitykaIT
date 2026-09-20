@@ -17,7 +17,7 @@ const { site } = config;
 const { title, description, ogImage, canonicalURL, pubDatetime, modDatetime } =
   Astro.props;
 
-// 1. Wyciągamy aktualny slug z adresu URL (np. /posts/nazwa-posta/ -> nazwa-posta)
+// 1. Wyciągamy aktualny identyfikator (slug/id) z adresu URL
 const currentPath = Astro.url.pathname;
 const currentSlug = currentPath.split("/").filter(Boolean).pop();
 
@@ -25,15 +25,12 @@ const currentSlug = currentPath.split("/").filter(Boolean).pop();
 const allPosts = await getCollection("posts");
 
 // 3. Znajdujemy aktualny post, aby poznać jego tagi
-const currentPost = allPosts.find(p => p.id === currentSlug || p.slug === currentSlug);
+const currentPost = allPosts.find(p => p.id === currentSlug);
 const currentTags = currentPost?.data.tags || [];
 
 // 4. Filtrujemy powiązane posty na podstawie wspólnych tagów
 const relatedPosts = allPosts
-  .filter(p => {
-    const pSlug = p.id || p.slug;
-    return pSlug !== currentSlug && !p.data.draft;
-  })
+  .filter(p => p.id !== currentSlug && !p.data.draft)
   .map(p => {
     const pTags = p.data.tags || [];
     const commonTagsCount = pTags.filter(tag => currentTags.includes(tag)).length;
@@ -100,7 +97,7 @@ const structuredData = {
         {relatedPosts.map(p => (
           <li>
             <a 
-              href={`/posts/${p.id || p.slug}/`}
+              href={`/posts/${p.id}/`}
               class="block p-4 rounded-lg border border-border bg-muted/20 hover:border-accent transition-all"
             >
               <h4 class="font-medium text-accent hover:underline">{p.data.title}</h4>
