@@ -6,6 +6,8 @@ slug: pulapka-kopiowania-wzorcow-kontekst-architektoniczny
 draft: false
 tags: [systems-thinking, enterprise-architecture, mental-models, core-banking]
 description: "Refleksja nad tym, dlaczego bezrefleksyjne przenoszenie nawyków i modeli myślenia między różnymi domenami IT prowadzi do błędów architektonicznych."
+related:
+
 ---
 
 ## Kontekst a architektoniczna ślepota
