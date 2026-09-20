@@ -1,7 +1,7 @@
 ---
 author: Damian Cebulak
 pubDatetime: 2026-09-20T08:00:00Z
-title: Architektura poznawcza: Jak modele myślenia kształtują kod i organizację
+title: "Architektura poznawcza: Jak modele myślenia kształtują kod i organizację"
 slug: architektura-poznawcza-modele-myslenia
 draft: false
 tags: [continuous-learning, systems-thinking, mental-models]
