@@ -35,3 +35,9 @@
   --muted-foreground: #a8a29e;
   --border: #44403c;
 }
+/* Ukrycie symbolu # przy nagłówkach w artykułach */
+.prose h2 a[href^="#"], 
+.prose h3 a[href^="#"],
+.prose h4 a[href^="#"] {
+  display: none;
+}
