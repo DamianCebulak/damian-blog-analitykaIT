@@ -41,3 +41,10 @@
 .prose h4 a[href^="#"] {
   display: none;
 }
+/* Agresywne ukrycie kotwic i symboli # przy nagłówkach */
+.prose h2 a.anchor,
+.prose h3 a.anchor,
+.prose h4 a.anchor,
+.prose :is(h2, h3, h4) > a[href^="#"] {
+  display: none !important;
+}
