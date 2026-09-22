@@ -3,7 +3,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 export default defineAstroPaperConfig({
   site: {
     url: "https://astro-paper.pages.dev/",
-    title: "Damian Cebulak | Tech Lead & IT Analyst",
+    title: "Ogród - Core Analysis",
     description: "Insights on core banking transformations, enterprise architecture, and systems thinking by Damian Cebulak.",
     author: "Damian Cebulak",
     profile: "https://github.com/DamianCebulak",
