@@ -8,13 +8,19 @@ tags: [systems-thinking, enterprise-architecture, core-banking]
 description: "Przegląd ewolucji architektury systemów IT – od tradycyjnych monolitów, przez podejście SOA i modularność, aż po mikroserwisy oraz związane z nimi kompromisy."
 ---
 
+## Narodziny monolitu: Szybkość i wydajność
+
 Pierwsze systemy IT powstawały w architekturze monolitu. Był to naturalny ruch dla budowania systemu przez deweloperów. System składał się z wielu programów i funkcji ściśle ze sobą zależnych.
 
 Takie rozwiązanie pozwalało na względnie szybkie tworzenie aplikacji oraz było bardzo wydajne. Wszystko działało w jednej instancji i nie było strat na komunikacji sieciowej.
 
+## Problem „spaghetti” i era modułowości
+
 Z czasem okazało się, że tego typu rozwiązanie sprawia spore problemy w utrzymaniu. Powstawała tzw. architektura „spaghetti”, gdzie powiązania między funkcjami i programami były tak skomplikowane, że analiza wpływu zmian stała się bardzo pracochłonna. Łatwo było też przeoczyć miejsce do zmian lub wprowadzić modyfikację, która dotykała większego obszaru systemu, niż się spodziewaliśmy.
 
 Z tego powodu wprowadzono modułowość. System podzielono na moduły według dziedziny, tworząc w ten sposób hermetyczne obszary. Programy również zostały podzielone tak, aby odzwierciedlać konkretne funkcje w danej dziedzinie. Ułatwiło to analizy, ale nadal powiązania między modułami bywały skomplikowane i bardzo ścisłe.
+
+## Od SOA do chmury i konteneryzacji
 
 Kolejnym krokiem ewolucyjnym była SOA (Architektura Orientowana na Usługi). W tym podejściu systemy zaczęto dzielić na większe, niezależne usługi komunikujące się ze sobą (często za pośrednictwem szyny danych – Enterprise Service Bus, ESB oraz protokołów takich jak SOAP). SOA miało na celu integrację systemów wewnątrz organizacji i ponowne wykorzystanie usług, jednak w praktyce często okazywało się zbyt ciężkie, skomplikowane i kosztowne w utrzymaniu.
 
@@ -22,11 +28,17 @@ Wraz z rozwojem technologii i potrzebą większej elastyczności zaczęto dąży
 
 W monolitach cała aplikacja i wszystkie jej funkcje działają w jednym obszarze, więc obciążenie jednej z nich wpływa na cały system. Technologia chmurowa i lżejsze podejścia pozwoliły na rozdzielenie serwisów, dzięki czemu obciążenie jednej funkcji nie ograniczało innej, a zasoby można było dynamicznie skalować tam, gdzie było to potrzebne.
 
+## Era mikroserwisów: Zalety
+
 To w efekcie doprowadziło do powstania architektury mikroserwisów, gdzie każdy taki serwis działa jako osobna aplikacja. Wbrew pozorom nie jest on wcale taki „mikro”, bo dostarcza cały pakiet powiązanych funkcji, ale w perspektywie całego systemu stanowi jego małą, niezależną cząstkę. Tego typu rozwiązanie zapewnia wysoką skalowalność, ułatwia analizy wpływu oraz testowanie, a tym samym skraca czas wprowadzenia produktu na rynek (*Time-to-Market*).
+
+## Ciemna strona mikroserwisów: Nowe wyzwania
 
 Niestety są też wady takiego rozwiązania. Dochodzi nam o wiele bardziej skomplikowana kwestia integracji między systemami czy też serwisami. Tym samym istnieje ryzyko, że spaghetti otrzymamy na poziomie międzyserwisowym zamiast w kodzie. Dlatego ważna jest rola architekta, który może to odpowiednio poukładać. Tu wysuwa się zaleta, że tego typu architektura umożliwia projektowanie bez wchodzenia w detale kodu.
 
 Drugą wadą jest utrata wydajności na rzecz komunikacji przez API. W erze światłowodów komunikacja może wydawać się bezstratna, ale dla systemów z olbrzymim ruchem (jak systemy bankowe) są to widoczne straty. Tutaj rozwiązaniem jest komunikacja asynchroniczna (trudna do uzyskania w monolitach). Mikroserwisy możemy wyposażyć w kolejki i oprzeć komunikację na działaniach asynchronicznych, co dodatkowo zwiększy niezawodność rozwiązania.
+
+## Podsumowanie: Architektura to wybór kompromisów
 
 Warto podkreślić, że choć historycznie proces ten może wydawać się liniowy – od „gorszego” do „najlepszego” – to w rzeczywistości każdy z tych kroków może być w pełni docelowym rozwiązaniem zawierającym własny zestaw kompromisów. Mikroserwisy nie są uniwersalnym panaceum i są często nadużywane tam, gdzie w zupełności wystarczyłby dobrze zaprojektowany, modułowy monolit. Niezależnie od wybranej drogi trzeba pamiętać o dobrym projekcie architektury, aby nie wpaść w pułapki danego rozwiązania.
 
