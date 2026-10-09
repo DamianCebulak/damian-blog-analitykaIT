@@ -4,7 +4,7 @@ pubDatetime: 2026-09-24T14:00:00Z
 title: "Architektura bez administratora: Jak blockchain redefiniuje bezpieczeństwo w systemach IT"
 slug: architektura-bez-administratora-blockchain-bezpieczenstwo-it
 draft: false
-tags: [systems-thinking, enterprise-architecture, core-banking]
+tags: [systems-thinking, enterprise-architecture, blockchain, digital-assets]
 description: "Analiza tego, jak rezygnacja z centralnych uprawnień administratora i zastosowanie mechanizmów blockchain pozwala osiągnąć poziom nienaruszalności niedostępny dla tradycyjnych systemów."
 ---
 
