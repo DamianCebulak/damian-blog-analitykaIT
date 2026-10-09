@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-09-25T10:00:00Z
+pubDatetime: 2026-10-09T10:00:00Z
 title: "Nie samymi spekulacjami kryptowaluty żyją: Dlaczego stablecoiny zmieniają reguły gry w finansach?"
 slug: stablecoiny-zmieniaja-reguly-gry-w-finansach
 draft: false
