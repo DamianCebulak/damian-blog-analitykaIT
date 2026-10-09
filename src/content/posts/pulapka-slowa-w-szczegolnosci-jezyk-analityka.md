@@ -4,7 +4,7 @@ pubDatetime: 2026-09-21T15:00:00Z
 title: "Pułapka słowa „w szczególności”: Jak precyzja języka analitycznego wpływa na rozwój oprogramowania"
 slug: pulapka-slowa-w-szczegolnosci-jezyk-analityka
 draft: false
-tags: [systems-thinking, enterprise-architecture, mental-models, core-banking]
+tags: [systems-thinking, enterprise-architecture, mental-models, inżynieria-wymagań]
 description: "Analiza tego, jak jedno niewinne sformułowanie z języka prawniczego – „w szczególności” – potrafi wprowadzić chaos w wymaganiach systemowych, User Stories i kryteriach akceptacji."
 ---
 
