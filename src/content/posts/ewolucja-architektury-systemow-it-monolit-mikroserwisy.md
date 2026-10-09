@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-09-01T12:00:00Z
+pubDatetime: 2026-10-01T12:00:00Z
 title: "Ewolucja architektury systemów IT: Od monolitu do mikroserwisów i jej pułapki"
 slug: ewolucja-architektury-systemow-it-monolit-mikroserwisy
 draft: false
