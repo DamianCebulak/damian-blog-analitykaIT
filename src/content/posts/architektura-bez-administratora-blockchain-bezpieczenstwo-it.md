@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-09-24T14:00:00Z
+pubDatetime: 2026-10-08T14:00:00Z
 title: "Architektura bez administratora: Jak blockchain redefiniuje bezpieczeństwo w systemach IT"
 slug: architektura-bez-administratora-blockchain-bezpieczenstwo-it
 draft: false
