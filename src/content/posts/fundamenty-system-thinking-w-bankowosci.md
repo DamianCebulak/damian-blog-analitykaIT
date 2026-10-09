@@ -7,7 +7,6 @@ featured: true
 draft: false
 tags:
   - systems-thinking
-  - core-banking
   - enterprise-architecture
 description: Badanie, jak zasady myślenia systemowego napędzają sukces transformacji systemów core banking, mitygację ryzyka i spójność złożonej architektury IT.
 ---
