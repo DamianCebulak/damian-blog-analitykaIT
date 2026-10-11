@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-10-11T12:00:00Z
+pubDatetime: 2026-10-11T08:00:00Z
 title: "Podsumowanie IIBA Poland Summit 2026: Dokąd zmierza współczesna analiza biznesowa?"
 slug: podsumowanie-iiba-poland-summit-2026
 draft: false
