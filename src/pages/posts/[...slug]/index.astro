@@ -162,13 +162,13 @@ const ogImage = ogImageUrl
     <AdjacentPostNav {prevPost} {nextPost} />
   </main>
 
-  <!-- Automatyczna sekcja "Powiązane notatki" – teraz nad stopką -->
+<!-- Automatyczna sekcja "Powiązane notatki" – teraz nad stopką -->
   {relatedPosts.length > 0 && (
     <div class="app-layout">
       <section class="mt-16 border-t border-border pt-8">
         <h3 class="text-xl font-semibold tracking-wide mb-4">Powiązane notatki w ogrodzie</h3>
         <ul class="grid gap-4 sm:grid-cols-2">
-          {relatedPosts.map(p => (
+          {relatedPosts.map((p: any) => (
             <li>
               <a 
                 href={`/posts/${p.id}/`}
