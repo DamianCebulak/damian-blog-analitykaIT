@@ -79,16 +79,6 @@ const structuredData = {
         />
       )
     }
-
-    <script
-      type="application/ld+json"
-      is:inline
-      set:html={JSON.stringify(structuredData)}
-    />
-  </Fragment>
-
-<slot />
-
   <!-- Automatyczna sekcja "Powiązane notatki" – teraz nad stopką -->
   {relatedPosts.length > 0 && (
     <div class="app-layout">
@@ -110,5 +100,13 @@ const structuredData = {
       </section>
     </div>
   )}
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(structuredData)}
+    />
+  </Fragment>
+
+<slot />
 
 </Layout>
