@@ -61,6 +61,13 @@ type Props = {
 const { post, prevPost, nextPost } = Astro.props;
 const locale = Astro.currentLocale ?? config.site.lang;
 
+// Pobranie wszystkich postów i wyznaczenie powiązanych notatek na podstawie tagów
+const allPosts = await getCollection("posts");
+const currentTags = post.data.tags || [];
+const relatedPosts = allPosts
+  .filter(p => p.id !== post.id && p.data.tags?.some((tag: string) => currentTags.includes(tag)))
+  .slice(0, 2);
+
 const {
   title,
   description,
