@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-10-16T10:00:00Z
+pubDatetime: 2026-10-16T09:00:00Z
 title: "Inżynieria kompromisu: Czym jest pseudomodułowość w systemach legacy?"
 slug: 009-inżynieria-kompromisu-czym-jest-pseudomodułowość-w-systemach-legacy
 draft: false
