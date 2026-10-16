@@ -1,0 +1,62 @@
+---
+author: Damian Cebulak
+pubDatetime: 2026-10-16T10:00:00Z
+title: "Inżynieria kompromisu: Czym jest pseudomodułowość w systemach legacy?"
+slug: inżynieria-kompromisu-czym-jest-pseudomodułowość-w-systemach-legacy
+draft: false
+tags: [systems-thinking, enterprise-architecture, core-banking]
+description: "Szczegółowa analiza przejścia od zwykłego monolitu przez pseudomodułowość do monolitu modularnego. Porównanie podejść, pułapek i kompromisów architektonicznych w systemach core'owych."
+---
+
+Współczesna architektura systemów mocno dąży do modułowości. Obecnie modułowość często przybiera formę mikroserwisów, czyli dzielenia systemów na niezależne aplikacje. 
+
+Jednak świat z natury nie jest czarno-biały i istnieją w nim różne odcienie szarości. Dotyczy to zarówno architektury, w której funkcjonują modele pośrednie lub hybrydowe, jak i samych zalet oraz wad konkretnych rozwiązań.
+
+W tym artykule przyjrzymy się jednemu z takich odcieni szarości, który często występuje w rozbudowanych systemach core'owych typu legacy – czyli **pseudomodułowości**. Porównam ją z klasyczną modułowością oraz brakiem jakiejkolwiek modularności. Aby wpis był bardziej przejrzysty, intencjonalnie pomijam nowsze rozwiązania, takie jak mikroserwisy.
+
+## Porównanie pseudomodułowości z modułowością
+
+Poniżej znajduje się zestawienie dwóch modeli w kontekście sposobu ich implementacji w kodzie:
+
+| Pseudomodułowy system | Modułowy system |
+| :--- | :--- |
+| Monolit jest podzielony na moduły, ale wynika to wyłącznie ze standardów. Istnieją oddzielne foldery, bazy danych czy nazwy artefakterów z odpowiednimi prefiksami, a zespół jedynie „umawia się”, że nie miesza kodu między modułami. W praktyce programy wywołują się nawzajem bezpośrednio lub wstrzykują klasy obcych modułów. | Moduły są wyraźnie odizolowane, a komunikacja między nimi odbywa się wyłącznie za pomocą jawnych, publicznych interfejsów. |
+| Mimo podziału na moduły, moduł A może wykonywać bezpośrednie zapytania (np. `SELECT`) do tabel należących do modułu B, omijając jakiekolwiek warstwy abstrakcji. W przypadku masowego przetwarzania (batch) moduły współdzielą pliki z dużymi ilościami danych. | Jeśli moduł A potrzebuje danych z modułu B, musi wywołać odpowiedni interfejs modułu B, który zwróci bezpiecznie przetworzone dane, ewentualnie moduły przesyłają sobie asynchroniczne zdarzenia. Z kolei w przypadku procesów wsadowych komunikują się poprzez zoptymalizowane interfejsy plikowe. |
+| Sterowanie płynnie i niekontrolowane przeskakuje między modułami. Moduł A wywołuje funkcję modułu B, a ta z kolei uruchamia inną funkcję modułu A, tworząc ukrytą zależność cykliczną (`A -> B -> A`). | Zależności mają charakter jednokierunkowy i są acykliczne. Gdy moduł A wywołuje moduł B, a ten z kolei musi przekazać informację do modułu A, robi to asynchronicznie za pomocą zdarzeń lub mechanizmu odwrócenia sterowania. |
+| Wszystkie klasy, metody i pola pomocnicze w pakietach mają status publiczny. Każdy programista może zaimportować dowolną klasę wewnętrzną innego modułu, bo nic technicznie tego nie blokuje. | Większość klas wewnątrz modułu ma widoczność pakietową (`package-private` lub `internal`), a świat zewnętrzny ma dostęp jedynie do ściśle wydzielonych klas wejściowych (np. fasad). |
+
+## Dlaczego walczymy o granice architektoniczne?
+
+Wiemy już, jak odróżnić pseudomodułowość od modułowości. Jednak dlaczego ktoś wkłada tyle pracy i komplikacji, aby dzielić system na niezależne fragmenty, by potem łączyć je z powrotem za pomocą interfejsów?
+
+Paradoksalnie, taką złożonością prac walczymy z negatywnymi skutkami złożoności samego systemu. Tworzymy w ten sposób twarde granice architektoniczne, które przynoszą następujące korzyści:
+
+1. **Projektowanie z wyższego poziomu abstrakcji:** Modułowość pozwala architektonicznie „spojrzeć wyżej”. Zamiast tonąć w szczegółach konkretnych klas i metod, projektujemy system, operując na poziomie całych bloków biznesowych i ich interakcji. Ułatwia to rozmowy z biznesem i testowanie założeń architektonicznych przed napisaniem pierwszej linii kodu.
+2. **Redukcja obciążenia poznawczego:** Ludzki mózg ma ograniczone możliwości jednoczesnego przetwarzania informacji. Dzięki jasnym granicom programista skupia się wyłącznie na wycinku, nad którym pracuje, odcinając się od szumu informacyjnego z innych obszarów aplikacji.
+3. **Niezależność pracy zespołów (na poziomie kodu):** Wielkie monolity sprawiają, że programiści równocześnie modyfikują te same programy w ramach różnych zadań, generując konflikty w kodzie przy integracji zmian. Moduły pozwalają podzielić system wzdłuż linii domenowych, dzięki czemu zespoły pracują i kodują nowe funkcje równolegle (choć wdrożenie całości nadal może być wspólne, dopóki nie przejdziemy na mikroserwisy).
+4. **Wydajne przetwarzanie masowe (Interfejsy plikowe i zdarzenia):** W dojrzałej modułowości, aby uniknąć narzutu komunikacji sieciowej i ciągłego mapowania obiektów DTO przy procesach wsadowych (*batchowych*) operujących na milionach rekordów, architekci wykorzystują zoptymalizowane interfejsy plikowe (np. wymiana ustandaryzowanych płaskich plików między modułami) lub szyny zdarzeń. Pozwala to na przetwarzanie ogromnych wolumenów danych z zachowaniem hermetyzacji i ścisłych kontraktów, bez obciążania bazy danych.
+5. **Ułatwiona wymiana kodu lub platformy:** Próba wycięcia starej funkcji z mocno splecionego monolitu przypomina operację na otwartym sercu. W systemie modularnym przestarzały lub zmieniający się biznesowo komponent można wymienić lub przenieść na inną platformę bez ryzyka zerwania niejawnych powiązań w innych częściach systemu. Jedyne, co należy zachować, to interfejsy o odpowiedniej strukturze.
+6. **Ochrona przed „architekturą spaghetti”:** Zamiast polegać wyłącznie na dyscyplinie i umowach społecznych w zespole, modułowość opiera się na restrykcjach technicznych. Kompilator, widoczność pakietowa i testy architektoniczne fizycznie blokują tworzenie dzikich zależności.
+7. **Szybszy onboarding:** Nowa osoba w zespole nie musi tygodniami uczyć się powiązań w całym systemie. Wdrożenie zaczyna się od poznania pojedynczej domeny biznesowej, co znacznie szybciej doprowadza ją do pełnej produktywności.
+8. **Jasna własność kodu (*Ownership*):** Zgodnie z prawem Conwaya, moduły odzwierciedlające domeny biznesowe pozwalają przypisać konkretne obszary do konkretnych zespołów. Od razu wiadomo, kto decyduje o rozwoju danego wycinka i kto odpowiada za rozwiązywanie w nim problemów.
+
+## Zwykły monolit vs. Pseudomodułowość vs. Monolit Modułowy
+
+Jak wspominałem na początku, świat nie jest czarno-biały. Powyższe własności można realizować w różny sposób. Pseudomodułowość może realizować większość z nich, ale wymaga to ogromnej dyscypliny, zwłaszcza wobec presji czasu i deadline'ów. Poniższe zestawienie pokazuje szersze porównanie tych trzech podejść:
+
+| Aspekt | Zwykły Monolit | System Pseudomodułowy | Monolit Modułowy |
+| :--- | :--- | :--- | :--- |
+| **Początkowy narzut inwestycyjny** | Bardzo niski (skupienie wyłącznie na szybkim dostarczaniu funkcji). | Niski (ustalenie głównie umownej struktury katalogowej). | Wysoki (wymaga analizy domenowej / DDD, projektowania komunikacji i zdarzeń). |
+| **Poziom projektowania architektury** | Szczegółowy (poziom pojedynczych klas, metod i tabel bazy danych). | Złudnie wysoki. Działa, jeśli zespół narzuci rygorystyczną dyscyplinę, ale często zaciera się w kodzie na rzecz detali. | Wysoki (operowanie na domenach biznesowych, kontraktach i zdarzeniach). |
+| **Ochrona granic i reguł** | Brak granic do ochrony. | Oparta wyłącznie na ludzkiej dyscyplinie, konwencjach i ostrożności przy *Code Review*. | Oparta na „prawach fizyki kodu” (kompilator, widoczność pakietowa, testy architektoniczne). |
+| **Jasność powiązań / Analiza wpływu** | Niska (zależności są ukryte, głębokie i rozproszone po całym systemie). | Pozorna. Analiza jest możliwa, o ile deweloperzy unikali pójścia na skróty. | Pełna (wymuszona przez ściśle zdefiniowane API i jawne interfejsy). |
+| **Ryzyko architektury spaghetti** | Bardzo wysokie na poziomie kodu. | Wysokie (rosnące wraz ze spadkiem dyscypliny i presją czasu). | Ryzyko przenosi się na poziom architektoniczny (zbyt złożona sieć zdarzeń i powiązań między modułami). |
+| **Refaktoryzacja** | Niezwykle łatwa technicznie (zmiany w całym kodzie jednym kliknięciem w IDE). | Średnia do trudnej. Zależy od stopnia zapętlenia niejawnych zależności. | Wymaga koordynacji (modyfikacja publicznych interfejsów wymusza wersjonowanie i współpracę zespołów). |
+| **Obciążenie poznawcze** | Bardzo wysokie (trzeba rozumieć cały system). | Średnie, pod warunkiem przestrzegania reguł i granic. | Niższe (programista skupia się wyłącznie na izolowanej domenie biznesowej). |
+| **Własność kodu (*Ownership*)** | Wspólna, przy dużych aplikacjach całkowicie zatarta. | Zarysowana (funkcjonuje tak długo, jak zespoły szanują cudze terytorium). | Jasno przypisana (konkretny zespół w pełni odpowiada za domenę i jej API). |
+| **Niezależność pracy (Kodowanie)** | Wysokie ryzyko konfliktów przy równoległej pracy nad tym samym kodem. | Średnia. Zespoły nadal mogą nadpisywać współdzielone dane. | Wysoka (zespoły piszą kod równolegle, integrując się wyłącznie przez kontrakty). |
+| **Niezależność wdrożenia (*Deployment*)** | Brak (całość wdrażana jako jedna paczka/artefakt). | Brak (całość wdrażana wspólnie). | Brak lub znikoma (moduły integruje się i wdraża wspólnie; pełną niezależność dają mikroserwisy). |
+| **Skalowalność** | Całościowa (skalowanie pionowe/poziome całego systemu). | Całościowa. | Całościowa (by skalować niezależnie, moduł trzeba wyciągnąć do osobnego mikroserwisu). |
+| **Sposób testowania** | Trudny i powolny (głównie testy E2E z całą bazą danych). | Skupiony na pakietach, lecz przy braku dyscypliny wracają ciężkie testy E2E. | Prosty i szybki (łatwe izolowanie, mockowanie na poziomie API, testy jednostkowe). |
+| **Izolacja błędów (*Blast Radius*)** | Ograniczona (błąd wyczerpujący zasoby wywraca całą aplikację). | Ograniczona (błędy kaskadowo rozlewają się przez bezpośrednie wywołania metod). | Znacznie wyższa (bariery architektoniczne powstrzymują propagację błędów na poziomie biznesowym). |
+| **Wydajność** | Bardzo wysoka (brak barier, bezpośrednie odwołania, JOIN-y w pamięci). | Bardzo
