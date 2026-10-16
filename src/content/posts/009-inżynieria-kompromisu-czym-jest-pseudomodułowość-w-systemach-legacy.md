@@ -59,4 +59,17 @@ Jak wspominałem na początku, świat nie jest czarno-biały. Powyższe własno�
 | **Skalowalność** | Całościowa (skalowanie pionowe/poziome całego systemu). | Całościowa. | Całościowa (by skalować niezależnie, moduł trzeba wyciągnąć do osobnego mikroserwisu). |
 | **Sposób testowania** | Trudny i powolny (głównie testy E2E z całą bazą danych). | Skupiony na pakietach, lecz przy braku dyscypliny wracają ciężkie testy E2E. | Prosty i szybki (łatwe izolowanie, mockowanie na poziomie API, testy jednostkowe). |
 | **Izolacja błędów (*Blast Radius*)** | Ograniczona (błąd wyczerpujący zasoby wywraca całą aplikację). | Ograniczona (błędy kaskadowo rozlewają się przez bezpośrednie wywołania metod). | Znacznie wyższa (bariery architektoniczne powstrzymują propagację błędów na poziomie biznesowym). |
-| **Wydajność** | Bardzo wysoka (brak barier, bezpośrednie odwołania, JOIN-y w pamięci). | Bardzo
+| **Wydajność** | Bardzo wysoka (brak barier, bezpośrednie odwołania, JOIN-y w pamięci). | Bardzo wysoka (brak narzutów komunikacyjnych). | Może być nieco niższa (narzut na interfejsy i unikanie JOIN-ów; przy masowych danych stosuje się pliki/zdarzenia). |
+| **Wymiana kodu lub platformy** | Ekstremalnie trudna (operacja na otwartym sercu). | Zależna od dyscypliny (wymaga rozplątywania zależności). | Dużo łatwiejsza (dopóki kontrakt API pozostaje nienaruszony). |
+
+## Podsumowanie
+
+Wybór odpowiedniego podejścia architektonicznego zawsze zależy od skali, specyfiki i obciążeń danego systemu. Żadna z tych dróg nie jest pozbawiona wad, a każdy wybór to sztuka kompromisu. 
+
+Dla gigantycznych procesów wsadowych (*batch processing*) sztywne izolowanie bazy danych może drastycznie obniżyć wydajność. Z kolei dla nowoczesnych systemów o zmiennym obciążeniu monolit modularny może okazać się niewystarczający ze względu na brak możliwości niezależnego skalowania. Ryzyko powstania „architektury spaghetti” czy zawiłych zależności ukrytych w kodzie istnieje w każdym z zaprezentowanych modeli – sam techniczny podział na foldery nie stanowi uniwersalnego leku.
+
+Kluczem do sukcesu jest holistyczne, systemowe podejście. Wymaga ono świadomego projektowania granic, szacunku do dokumentacji oraz żelaznej dyscypliny zespołu. Tylko zachowanie równowagi pomiędzy rygorem architektonicznym a pragmatyzmem pozwala utrzymać system w dobrej kondycji przez długie lata.
+
+***
+
+*Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi refleksjami na temat architektury systemów i inżynierii oprogramowania.*
