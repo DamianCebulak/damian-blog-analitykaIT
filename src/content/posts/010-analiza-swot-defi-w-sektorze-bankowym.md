@@ -4,7 +4,7 @@ pubDatetime: 2026-10-19T14:00:00Z
 title: "Anatomija zmiany: Analiza SWOT zdecentralizowanych finansów (DeFi) w sektorze bankowym"
 slug: analiza-swot-defi-w-sektorze-bankowym
 draft: false
-tags: [systems-thinking, blockchain enterprise-architecture, digital-assets]
+tags: [systems-thinking, blockchain,  enterprise-architecture, digital-assets]
 description: "Spojrzenie na cyfrowe aktywa i DeFi przez pryzmat system Thinking oraz szczegółowej analizy SWOT. Szanse, zagrożenia i bariery w nowoczesnej bankowości."
 ---
 
