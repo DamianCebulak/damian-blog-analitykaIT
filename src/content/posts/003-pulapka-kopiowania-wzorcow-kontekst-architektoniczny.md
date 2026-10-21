@@ -4,7 +4,7 @@ pubDatetime: 2026-09-20T13:00:00Z
 title: "Pułapka kopiowania wzorców: Dlaczego zmiana kontekstu architektonicznego jest ważniejsza niż sama technologia"
 slug: pulapka-kopiowania-wzorcow-kontekst-architektoniczny
 draft: false
-tags: [systems-thinking, enterprise-architecture, mental-models, core-banking]
+tags: [software-architecture, mental-models, core-banking, systems-thinking]
 description: "Refleksja nad tym, dlaczego bezrefleksyjne przenoszenie nawyków i modeli myślenia między różnymi domenami IT prowadzi do błędów architektonicznych."
 related:
  - architektura-poznawcza-modele-myslenia
