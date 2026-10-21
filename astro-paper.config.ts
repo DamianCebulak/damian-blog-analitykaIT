@@ -2,9 +2,9 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
+    url: "https://dcebulak.pl/",
     title: "Ogród - Core Analysis",
-    description: "Insights on core banking transformations, enterprise architecture, and systems thinking by Damian Cebulak.",
+    description: "Artykuły i przemyślenia na temat transformacji systemów core banking, architektury korporacyjnej i systems thinking autorstwa Damiana Cebulaka.",
     author: "Damian Cebulak",
     profile: "https://github.com/DamianCebulak",
     ogImage: "default-og.jpg",
@@ -30,7 +30,7 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github",   url: "https://github.com/DamianCebulak" },
     { name: "linkedin", url: "https://www.linkedin.com/in/damian-cebulak/" },
-    { name: "mail",     url: "mailto:contact@damiancebulak.pl" },
+    { name: "mail",     url: "mailto:dcebulak@wp.pl" },
   ],
 shareLinks: [
     { name: "linkedin", url: "https://www.linkedin.com/sharing/share-offsite/?url=" },
