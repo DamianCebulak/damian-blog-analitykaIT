@@ -4,7 +4,7 @@ pubDatetime: 2026-09-20T08:00:00Z
 title: "Architektura poznawcza: Jak modele myślenia kształtują kod i organizację"
 slug: architektura-poznawcza-modele-myslenia
 draft: false
-tags: [continuous-learning, systems-thinking, mental-models]
+tags: [mental-models, continuous-learning, systems-thinking]
 description: Refleksja nad tym, jak budowanie i przełączanie modeli poznawczych wpływa na inżynierię oprogramowania, analizę biznesową oraz tworzenie treści.
 ---
 
