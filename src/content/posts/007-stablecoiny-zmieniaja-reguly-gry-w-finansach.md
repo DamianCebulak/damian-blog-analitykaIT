@@ -4,7 +4,7 @@ pubDatetime: 2026-10-09T10:00:00Z
 title: "Nie samymi spekulacjami kryptowaluty żyją: Dlaczego stablecoiny zmieniają reguły gry w finansach?"
 slug: stablecoiny-zmieniaja-reguly-gry-w-finansach
 draft: false
-tags: [digital-assets, capital-markets]
+tags: [digital-assets, capital-markets, blockchain]
 description: "Analiza roli stablecoinów w nowoczesnych finansach, globalnych przykładów (USDC, USDT, EURC) oraz barier i braku dojrzałych rozwiązań dla polskiego złotego (PLN)."
 ---
 
