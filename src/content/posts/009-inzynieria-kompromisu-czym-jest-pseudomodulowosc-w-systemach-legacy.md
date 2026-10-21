@@ -4,7 +4,7 @@ pubDatetime: 2026-10-16T09:00:00Z
 title: "Inżynieria kompromisu: Czym jest pseudomodułowość w systemach legacy?"
 slug: 009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy
 draft: false
-tags: [systems-thinking, enterprise-architecture, core-banking]
+tags: [software-architecture, core-banking, systems-thinking]
 description: "Szczegółowa analiza przejścia od zwykłego monolitu przez pseudomodułowość do monolitu modularnego. Porównanie podejść, pułapek i kompromisów architektonicznych w systemach core'owych."
 ---
 
