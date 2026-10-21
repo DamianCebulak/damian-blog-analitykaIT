@@ -4,7 +4,7 @@ pubDatetime: 2026-10-01T12:00:00Z
 title: "Ewolucja architektury systemów IT: Od monolitu do mikroserwisów i jej pułapki"
 slug: ewolucja-architektury-systemow-it-monolit-mikroserwisy
 draft: false
-tags: [systems-thinking, enterprise-architecture, core-banking]
+tags: [software-architecture, core-banking, systems-thinking]
 description: "Przegląd ewolucji architektury systemów IT – od tradycyjnych monolitów, przez podejście SOA i modularność, aż po mikroserwisy oraz związane z nimi kompromisy, podsumowane w czytelnej tabeli."
 ---
 
