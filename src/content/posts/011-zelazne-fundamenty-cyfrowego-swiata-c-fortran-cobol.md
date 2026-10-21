@@ -1,7 +1,7 @@
 ---
 author: Damian Cebulak
 pubDatetime: 2026-10-21T08:30:00Z
-title: "Żelazne fundamenty cyfrowego świata: Dlaczego w erze AI wciąż potrzebujemy języków takich jak C, Fortran czy Cobol?"
+title: "Żelazne fundamenty cyfrowego świata: Dlaczego w erze AI wciąż używamy języków takich jak C, Fortran czy Cobol?"
 slug: zelazne-fundamenty-cyfrowego-swiata-c-fortran-cobol
 draft: false
 tags: [cobol, core-banking, software-architecture]
