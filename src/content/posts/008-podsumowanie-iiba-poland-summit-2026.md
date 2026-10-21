@@ -2,7 +2,7 @@
 author: Damian Cebulak
 pubDatetime: 2026-10-11T08:00:00Z
 title: "Podsumowanie IIBA Poland Summit 2026: Dokąd zmierza współczesna analiza biznesowa?"
-slug: podsumowanie-iiba-poland-summit-2026
+slug: 008-podsumowanie-iiba-poland-summit-2026
 draft: false
 tags: [IIBA, Business-Analysis]
 description: "Refleksje i wnioski z tegorocznej edycji IIBA Poland Summit 2026 w Warszawie – od rewolucji AI po nietypowe perspektywy i architekturę biznesową."
