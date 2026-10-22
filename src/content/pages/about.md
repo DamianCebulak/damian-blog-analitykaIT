@@ -3,7 +3,7 @@ title: "O tym cyfrowym ogrodzie"
 description: "Kilka słów o mnie, tym blogu i celach, jakie przed nim stawiam."
 ---
 
-## Cześć, tu Damian!
+## Cześć, tu Damian Cebulak!
 
 Na co dzień pracuję jako **Tech Lead i Senior Analyst**, specjalizując się w projektowaniu i transformacjach złożonych systemów klasy *core banking* oraz architektur IT w Bankowości. Przez ponad dekadę w branży miałem okazję mierzyć się z wyzwaniami, jakie niesie za sobą wysoka dostępność, rygorystyczne wymagania transakcyjne, dług technologiczny oraz potrzeba zachowania spójności w dużych organizacjach.
 
