@@ -32,4 +32,4 @@ Choć projekt powstał przede wszystkim jako osobista baza wiedzy, mam nadzieję
 
 Jeśli bliskie są Ci tematy architektury systemowej, myślenia systemowego lub po prostu chcesz wymienić się doświadczeniami:
 
-* Znajdziesz mnie na [LinkedIn](https://www.linkedin.com/in/damian-cebulak/)
+* Znajdziesz mnie na [LinkedIn - Damian Cebulak](https://www.linkedin.com/in/damian-cebulak/)
