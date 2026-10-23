@@ -10,7 +10,7 @@ description: "Przegląd najczęstszych błędów metodologicznych w analizie dan
 
 Interesując się statystyką i analizą danych, często można dostrzec, jak łatwo wpaść w pułapki podczas budowania narracji wokół liczb. Błędy metodologiczne w zbieraniu i interpretacji informacji potrafią całkowicie wypaczyć wnioski. 
 
-Przyjrzyjmy się zestawieniu najczęstszych pułapek analitycznych oraz sposobom, jak ich unikać w praktyce organizacji dążących do dojrzałości opartej na danych (*Data-Driven*).
+Przyjrzyjmy się zestawieniu najczęstszych pułapek analitycznych na jakie natrafiłam na LinkedIn oraz sposobom, jak ich unikać. Temat uważam za ważny w szczególności w kontekscie mody na ,,*Data-Driven*".
 
 ---
 
