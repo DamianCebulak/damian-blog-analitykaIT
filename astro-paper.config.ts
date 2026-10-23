@@ -3,8 +3,8 @@ import { defineAstroPaperConfig } from "./src/types/config";
 export default defineAstroPaperConfig({
   site: {
     url: "https://dcebulak.pl/",
-    title: "Ogród - Core Analysis",
-    description: "Artykuły i przemyślenia na temat transformacji systemów core banking, architektury korporacyjnej i systems thinking autorstwa Damiana Cebulaka.",
+    title: "Ogród - Core Analysis | Architektura i Analiza IT",
+    description: "Autorski blog Damiana Cebulaka o transformacjach systemów core banking, architekturze systemów IT, systems thinking oraz praktycznej analityce IT.",
     author: "Damian Cebulak",
     profile: "https://github.com/DamianCebulak",
     ogImage: "default-og.jpg",
