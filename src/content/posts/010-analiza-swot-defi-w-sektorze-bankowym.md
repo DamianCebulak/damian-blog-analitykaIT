@@ -54,7 +54,7 @@ Zdecentralizowane finanse wprowadzają do architektury gospodarczej całkowicie 
 
 * **Future Finance Poland:** *Cyfrowe aktywa, realna gospodarka. Potencjał tokenizacji instrumentów finansowych w Polsce i rekomendacje wdrożeniowe*, raport opracowany we współpracy z Accenture, Bird & Bird, GPW, KDPW oraz Bankiem Pekao.
 
-## Szukasz czegośo DeFi?
+## Szukasz czegoś o DeFi?
 * Przeczytaj więcej o [architekturze blockchain](https://www.dcebulak.pl/posts/architektura-bez-administratora-blockchain-bezpieczenstwo-it/)
 * Dowiedz się więcej czym są [stablecoiny](https://www.dcebulak.pl/posts/stablecoiny-zmieniaja-reguly-gry-w-finansach/)
 ***
