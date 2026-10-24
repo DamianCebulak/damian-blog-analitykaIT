@@ -44,4 +44,10 @@ Zamiast gwałtownej rewolucji, nowoczesny krajobraz IT opiera się na harmonii �
 
 ***
 
+## Chcesz wiedzieć więcej o systemach Legacy?
+
+* Przeczytaj więcej o [Modułowości i Pseudomodułowości](https://www.dcebulak.pl/posts/009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy/), które są najpopularniejszym rozwiązaniem w legacy.
+
+***
+
 *Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi refleksjami na temat architektury systemów oraz ewolucji oprogramowania.*
