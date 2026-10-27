@@ -1,3 +1,4 @@
+---
 author: Damian Cebulak
 pubDatetime: 2026-10-28T09:00:00Z
 title: "Dlaczego BPMN to coś więcej niż rysowanie diagramów? Rola notacji w nowoczesnej Analizie Biznesowej"
