@@ -6,6 +6,7 @@ slug: 009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy
 draft: false
 tags: [software-architecture, core-banking, systems-thinking]
 description: "Szczegółowa analiza przejścia od zwykłego monolitu przez pseudomodułowość do monolitu modularnego. Porównanie podejść, pułapek i kompromisów architektonicznych w systemach core'owych."
+lang: "pl"
 ---
 
 Współczesna architektura systemów mocno dąży do modułowości. Obecnie modułowość często przybiera formę mikroserwisów, czyli dzielenia systemów na niezależne aplikacje. 
