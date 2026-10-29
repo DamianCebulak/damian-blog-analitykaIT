@@ -8,6 +8,7 @@ tags: [software-architecture, mental-models, core-banking, systems-thinking]
 description: "Refleksja nad tym, dlaczego bezrefleksyjne przenoszenie nawyków i modeli myślenia między różnymi domenami IT prowadzi do błędów architektonicznych."
 related:
  - architektura-poznawcza-modele-myslenia
+lang: "pl"
 ---
 
 ## Kontekst a architektoniczna ślepota
