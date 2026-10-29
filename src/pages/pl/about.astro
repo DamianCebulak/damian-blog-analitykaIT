@@ -25,12 +25,9 @@ const { Content } = await render(about);
   canonicalURL={about.data.canonicalURL}
 >
   <Header />
-
   <Breadcrumb />
-
   <Main pageTitle={about.data.title} class="app-prose">
     <Content />
   </Main>
-
   <Footer />
 </Layout>
