@@ -10,14 +10,18 @@ function getPostPathSegments(filePath: string | undefined): string[] {
       .split("/")
       .filter(path => path !== "")
       .filter(path => !path.startsWith("_"))
+      // Odrzucamy segmenty oznaczające języki (np. "pl", "en"), żeby nie dublować ich w URL
+      .filter(path => path !== "pl" && path !== "en")
       .slice(0, -1)
       .map(segment => slugifyStr(segment)) ?? []
   );
 }
 
 function getIdSlug(id: string): string {
-  const postId = id.split("/");
-  return postId.length > 0 ? String(postId[postId.length - 1]) : id;
+  // Czyszczenie ID z ewentualnego prefiksu językowego na początku (np. "en/nazwa" -> "nazwa")
+  const cleanId = id.replace(/^(pl|en)[\/\\]/, "");
+  const postId = cleanId.split("/");
+  return postId.length > 0 ? String(postId[postId.length - 1]) : cleanId;
 }
 
 function getPostSlugPath(id: string, filePath: string | undefined): string {
