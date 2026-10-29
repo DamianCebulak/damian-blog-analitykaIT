@@ -4,7 +4,7 @@ pubDatetime: 2026-10-30T10:00:00Z
 title: "Cel ponad wszystko: Dlaczego „opisanie systemu” to największa pułapka dokumentacji IT"
 slug: cel-ponad-wszystko-pulapka-dokumentacji-it
 draft: false
-tags: [systems-thinking, enterprise-architecture, business-analysis]
+tags: [documentation, business-analysis, reflection, systems-analysis, software-architecture]
 description: "Refleksje nad tworzeniem dokumentacji technicznej i biznesowej. Dlaczego dokument bez wyraźnego celu staje się martwym balastem i jak świadomie rezygnować z nadmiaru informacji."
 ---
 
@@ -75,6 +75,9 @@ Dzięki dokumentom osadzonym w konkretnym kontekście zyskujemy realne wsparcie 
 
 Dokumentacja nie jest celem samym w sobie – jest narzędziem komunikacji i podejmowania decyzji. Jeśli na starcie nie określimy zadań, jakie dany artefakt ma realizować, ryzykujemy produkcję kosztownej, wirtualnej makulatury, która dezaktualizuje się szybciej, niż zdążymy ją przeczytać. Zanim więc sięgniesz po edytor tekstu lub narzędzie do diagramów, zadaj sobie jedno pytanie: **do czego ta dokumentacja ma nam posłużyć?**
 
+## Szukasz czegoś więcej?
+* Zobacz dlaczego [BPMN może sprawdzić się w dokumentacji](https://www.dcebulak.pl/posts/dlaczego-bpmn-w-analizie-biznesowej/)
+  
 ***
 
 *Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi refleksjami na temat architektury korporacyjnej i efektywnego modelowania wymagań.*
