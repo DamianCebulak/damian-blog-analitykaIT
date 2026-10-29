@@ -6,6 +6,7 @@ slug: architektura-bez-administratora-blockchain-bezpieczenstwo-it
 draft: false
 tags: [blockchain, software-architecture, systems-thinking, digital-assets]
 description: "Analiza tego, jak rezygnacja z centralnych uprawnień administratora i zastosowanie mechanizmów blockchain pozwala osiągnąć poziom nienaruszalności niedostępny dla tradycyjnych systemów."
+lang: "pl"
 ---
 
 ## Tradycyjny model zaufania a ryzyko ludzkie
