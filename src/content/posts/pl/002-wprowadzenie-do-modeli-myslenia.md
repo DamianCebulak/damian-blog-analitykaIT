@@ -6,6 +6,7 @@ slug: architektura-poznawcza-modele-myslenia
 draft: false
 tags: [mental-models, continuous-learning, systems-thinking]
 description: Refleksja nad tym, jak budowanie i przełączanie modeli poznawczych wpływa na inżynierię oprogramowania, analizę biznesową oraz tworzenie treści.
+lang: "pl"
 ---
 
 ## Wprowadzenie: Wzorce w labiryncie poznania
