@@ -23,6 +23,15 @@ export const GET: APIRoute = async context => {
     ),
   ]);
 
+  // Sprawdzamy, czy generujemy grafikę dla wersji angielskiej
+  const isEnglish = context.url.pathname.includes("/en/");
+
+  const siteTitle = config.site.title;
+  // Możesz zdefiniować angielski opis lub pobierać go dynamicznie
+  const siteDescription = isEnglish
+    ? "Damian Cebulak's blog on core banking, IT architecture, and systems thinking."
+    : config.site.description;
+
   const svg = await satori(
     {
       type: "div",
@@ -99,14 +108,14 @@ export const GET: APIRoute = async context => {
                             type: "p",
                             props: {
                               style: { fontSize: 72, fontWeight: "bold" },
-                              children: config.site.title,
+                              children: siteTitle,
                             },
                           },
                           {
                             type: "p",
                             props: {
                               style: { fontSize: 28 },
-                              children: config.site.description,
+                              children: siteDescription,
                             },
                           },
                         ],
