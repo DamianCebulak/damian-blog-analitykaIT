@@ -15,7 +15,11 @@ import { useTranslations } from "@/i18n";
 import config from "@/config";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  // Pobieramy wyłącznie nie-szkicowe wpisy dla języka polskiego
+  const posts = await getCollection(
+    "posts",
+    ({ data }) => !data.draft && data.lang === "pl"
+  );
   const tags = getUniqueTags(posts);
 
   return tags.flatMap(({ tag, tagName }) => {
