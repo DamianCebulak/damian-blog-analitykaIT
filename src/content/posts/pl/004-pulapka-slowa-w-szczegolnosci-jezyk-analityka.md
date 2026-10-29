@@ -6,6 +6,7 @@ slug: pulapka-slowa-w-szczegolnosci-jezyk-analityka
 draft: false
 tags: [inzynieria-wymagan, Business-Analysis, mental-models, systems-thinking]
 description: "Analiza tego, jak jedno niewinne sformułowanie z języka prawniczego – „w szczególności” – potrafi wprowadzić chaos w wymaganiach systemowych, User Stories i kryteriach akceptacji."
+lang: "pl"
 ---
 
 Jednym z najważniejszych, a zarazem najtrudniejszych zadań analityka biznesowego i systemowego jest walka z barierami komunikacyjnymi. Co ciekawe, walka ta często rozgrywa się na poziomie pojedynczych słów. Czasem pozornie niewinne wyrażenie potrafi wywołać lawinę nieporozumień między biznesem, analitykiem, testerem a deweloperem. 
