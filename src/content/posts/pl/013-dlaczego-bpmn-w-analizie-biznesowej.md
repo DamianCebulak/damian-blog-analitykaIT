@@ -6,6 +6,7 @@ slug: dlaczego-bpmn-w-analizie-biznesowej
 draft: false
 tags: [business-analysis, process-modeling, bpmn]
 description: "Dowiedz się, dlaczego notacja BPMN jest kluczowym narzędziem w optymalizacji procesów biznesowych i jak wspiera wspólne zrozumienie (shared understanding) w projektach IT."
+lang: "pl"
 ---
 
 Notacja **BPMN** (*Business Process Model and Notation*) jest wprawdzie mocno rozpowszechniona w świecie IT, mimo to nadal spotyka się projekty, które z sukcesem działają bez niej albo wykorzystują własne, autorskie standardy wizualizacji.
