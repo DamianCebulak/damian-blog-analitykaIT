@@ -12,8 +12,10 @@ export async function getStaticPaths() {
     return [];
   }
 
-  const posts = await getCollection("posts").then(p =>
-    p.filter(({ data }) => !data.draft && !data.ogImage)
+  // Pobieramy tylko angielskie wpisy bez draftów i bez własnego obrazka OG
+  const posts = await getCollection(
+    "posts",
+    ({ data, id }) => !data.draft && !data.ogImage && id.startsWith("en/")
   );
 
   return posts.map(post => ({
