@@ -160,6 +160,24 @@ const isActive = (path: string) => {
             </li>
           )
         }
+        <!-- Przełącznik języków PL / EN -->
+        <li class="col-span-2 sm:col-span-1 flex items-center justify-center text-sm font-semibold">
+          <div class="flex items-center gap-x-1 px-2 py-1">
+            <a 
+              href="/" 
+              class:list={["hover:text-accent transition-colors", { "text-accent underline underline-offset-4": locale === "pl" }]}
+            >
+              PL
+            </a>
+            <span class="opacity-50">/</span>
+            <a 
+              href="/en" 
+              class:list={["hover:text-accent transition-colors", { "text-accent underline underline-offset-4": locale === "en" }]}
+            >
+              EN
+            </a>
+          </div>
+        </li>
       </ul>
     </nav>
   </div>
