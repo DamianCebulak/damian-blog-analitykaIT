@@ -15,7 +15,12 @@ import config from "@/config";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection(
     "posts",
-    ({ data, id }) => !data.draft && !id.startsWith("en/")
+    ({ data, filePath }) => {
+      if (data.draft) return false;
+      // Sprawdzamy czy plik fizycznie znajduje się w folderze content/posts/pl/
+      // (lub dopasowujemy ścieżkę tak, aby odrzucić katalog en)
+      return filePath ? filePath.includes("/posts/pl/") || filePath.includes("\\posts\\pl\\") : true;
+    }
   );
   return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
 }) satisfies GetStaticPaths;
