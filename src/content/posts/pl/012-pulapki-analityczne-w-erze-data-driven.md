@@ -6,6 +6,7 @@ slug: pulapki-analityczne-w-erze-data-driven
 draft: false
 tags: [systems-thinking, data-analysis, business-analysis]
 description: "Przegląd najczęstszych błędów metodologicznych w analizie danych – od nadmiernego uogólniania i błędu przeżywalności po Prawo Goodharta i złudne korelacje."
+lang: "pl"
 ---
 
 Interesując się statystyką i analizą danych, często można dostrzec, jak łatwo wpaść w pułapki podczas budowania narracji wokół liczb. Błędy metodologiczne w zbieraniu i interpretacji informacji potrafią całkowicie wypaczyć wnioski. 
