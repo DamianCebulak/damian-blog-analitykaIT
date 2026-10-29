@@ -6,6 +6,7 @@ slug: zelazne-fundamenty-cyfrowego-swiata-c-fortran-cobol
 draft: false
 tags: [cobol, core-banking, software-architecture]
 description: "Analiza roli dojrzałych technologii (C, Fortran, COBOL) w erze sztucznej inteligencji. Dlaczego utrzymanie systemów legacy pochłania większość budżetów IT i czym jest architektura odporności."
+lang: "pl"
 ---
 
 Żyjemy w czasach, w których sztuczna inteligencja rewolucjonizuje rozwój oprogramowania, generując nowoczesny kod w Pythonie, JavaScript czy C# w ułamku sekundy. Jednak patrząc na najnowsze trendy popularności języków programowania (takie jak TIOBE Index), dostrzegamy niezwykle ciekawy obraz: obok naturalnych fluktuacji nowoczesnych narzędzi, niezmiennie mocną pozycję utrzymują rozwiązania dojrzałe. Język C zajmuje drugie miejsce w rankingu, a prawdziwi weterani branży – Fortran (ok. 13. miejsca) i COBOL (czołowa dwudziestka) – wciąż stabilnie utrzymują się w zestawieniu.
