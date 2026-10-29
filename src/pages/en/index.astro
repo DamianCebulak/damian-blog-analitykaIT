@@ -15,12 +15,14 @@ import config from "@/config";
 
 const { socials, posts: postsConfig } = config;
 
-const locale = Astro.currentLocale ?? "en";
+const locale = "en";
 const t = useTranslations(locale);
 
-// Pobieramy wpisy i filtrujemy tylko te, które znajdują się w folderze /en/
-const allPosts = await getCollection("posts");
-const englishPosts = allPosts.filter(post => post.id.startsWith("en/"));
+// Pobieramy wpisy i filtrujemy po polu lang
+const englishPosts = await getCollection(
+  "posts",
+  ({ data }) => !data.draft && data.lang === "en"
+);
 const sortedPosts = getSortedPosts(englishPosts);
 const homePath = getRelativeLocaleUrl(locale, "");
 ---
