@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags: [core-banking, systems-thinking, software-architecture]
 description: Badanie, jak zasady myślenia systemowego napędzają sukces transformacji systemów core banking, mitygację ryzyka i spójność złożonej architektury IT.
+lang: "pl"
 ---
 
 Współczesne transformacje systemów klasy *core banking* rzadko są wyłącznie projektami migracji oprogramowania – to złożone wyzwania społeczno-techniczne. Zastosowanie **systems thinking** pozwala architektom i liderom technicznym spojrzeć poza odizolowane podsystemy i zrozumieć dynamiczne interakcje zachodzące w całym ekosystemie przedsiębiorstwa.
