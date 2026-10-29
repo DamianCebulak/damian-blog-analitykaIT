@@ -6,7 +6,8 @@ slug: systems-thinking-in-core-banking
 featured: true
 draft: false
 tags: [core-banking, systems-thinking, software-architecture]
-description: Exploring how systems thinking principles drive the success of core banking transformations, risk mitigation, and enterprise IT architecture coherence.
+description: "Exploring how systems thinking principles drive the success of core banking transformations, risk mitigation, and enterprise IT architecture coherence."
+lang: "en"
 ---
 
 Modern *core banking* transformations are rarely just software migration projects—they are complex socio-technical challenges. Applying **systems thinking** allows architects and technical leaders to look beyond isolated subsystems and understand the dynamic interactions happening across the entire enterprise ecosystem.
