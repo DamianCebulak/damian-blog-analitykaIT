@@ -15,7 +15,7 @@ import config from "@/config";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection(
     "posts",
-    ({ data, id }) => !data.draft && !id.startsWith("pl/")
+    ({ data, id }) => !data.draft && !id.startsWith("en/")
   );
   return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
 }) satisfies GetStaticPaths;
