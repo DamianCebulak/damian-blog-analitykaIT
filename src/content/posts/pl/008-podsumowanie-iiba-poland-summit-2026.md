@@ -6,6 +6,7 @@ slug: 008-podsumowanie-iiba-poland-summit-2026
 draft: false
 tags: [IIBA, Business-Analysis]
 description: "Refleksje i wnioski z tegorocznej edycji IIBA Poland Summit 2026 w Warszawie – od rewolucji AI po nietypowe perspektywy i architekturę biznesową."
+lang: "pl"
 ---
 
 Miałem okazję współorganizować tegoroczną edycję **IIBA Poland Summit 2026** w Warszawie – od budowania strategii marketingowej, przez tworzenie postów i grafik, aż po przygotowanie szerokiej gamy materiałów na samą konferencję. Dwudniowe wydarzenie po raz kolejny udowodniło, że nasza branża ewoluuje szybciej niż kiedykolwiek.
