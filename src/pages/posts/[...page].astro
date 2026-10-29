@@ -15,11 +15,14 @@ import config from "@/config";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection(
     "posts",
-    ({ data, filePath }) => {
+    ({ data, id, filePath }) => {
       if (data.draft) return false;
-      // Sprawdzamy czy plik fizycznie znajduje się w folderze content/posts/pl/
-      // (lub dopasowujemy ścieżkę tak, aby odrzucić katalog en)
-      return filePath ? filePath.includes("/posts/pl/") || filePath.includes("\\posts\\pl\\") : true;
+      // Sprawdzamy czy wpis znajduje się w folderze pl/ (uwzględniając różnice w systemach operacyjnych dla ścieżek)
+      return (
+        id.startsWith("pl/") ||
+        id.startsWith("pl\\") ||
+        (filePath && (filePath.includes("/posts/pl/") || filePath.includes("\\posts\\pl\\")))
+      );
     }
   );
   return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
