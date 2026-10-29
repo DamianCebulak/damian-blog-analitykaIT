@@ -6,6 +6,7 @@ slug: analiza-swot-defi-w-sektorze-bankowym
 draft: false
 tags: [digital-assets, blockchain, systems-thinking, software-architecture]
 description: "Spojrzenie na cyfrowe aktywa i DeFi przez pryzmat system Thinking oraz szczegółowej analizy SWOT. Szanse, zagrożenia i bariery w nowoczesnej bankowości."
+lang: "pl"
 ---
 
 Choć technologia blockchain jest już na rynku od wielu lat, nadal nie została szeroko zaadoptowana w tradycyjnej branży bankowej, a prawne aspekty jej wykorzystywania wciąż budzą gorące debaty w Europie. Fakt ten udowadnia niezwykle ważną prawdę o innowacjach: nawet rozwiązania mające ponad dekadę mogą wywoływać kontrowersje, zmuszając instytucje finansowe do głębokiej refleksji nad stabilnością i bezpieczeństwem.
