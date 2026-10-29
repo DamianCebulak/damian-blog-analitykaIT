@@ -6,6 +6,7 @@ slug: cel-ponad-wszystko-pulapka-dokumentacji-it
 draft: false
 tags: [documentation, business-analysis, reflection, systems-analysis, software-architecture]
 description: "Refleksje nad tworzeniem dokumentacji technicznej i biznesowej. Dlaczego dokument bez wyraźnego celu staje się martwym balastem i jak świadomie rezygnować z nadmiaru informacji."
+lang: "pl"
 ---
 
 Tę samą rzeczywistość można opisać na dziesiątki sposobów. 
