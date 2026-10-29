@@ -15,15 +15,7 @@ import config from "@/config";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection(
     "posts",
-    ({ data, id, filePath }) => {
-      if (data.draft) return false;
-      // Sprawdzamy czy wpis znajduje się w folderze pl/ (uwzględniając różnice w systemach operacyjnych dla ścieżek)
-      return (
-        id.startsWith("pl/") ||
-        id.startsWith("pl\\") ||
-        (filePath && (filePath.includes("/posts/pl/") || filePath.includes("\\posts\\pl\\")))
-      );
-    }
+    ({ data }) => !data.draft && data.lang === "pl"
   );
   return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
 }) satisfies GetStaticPaths;
@@ -47,6 +39,5 @@ const t = useTranslations(locale);
 
   <Pagination {page} />
 
-  <!-- STOPKA STRONY -->
   <Footer noMarginTop={page.lastPage > 1} />
 </Layout>
