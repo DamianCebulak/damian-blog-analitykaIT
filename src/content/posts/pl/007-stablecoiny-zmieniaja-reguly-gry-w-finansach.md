@@ -6,6 +6,7 @@ slug: stablecoiny-zmieniaja-reguly-gry-w-finansach
 draft: false
 tags: [digital-assets, capital-markets, blockchain]
 description: "Analiza roli stablecoinów w nowoczesnych finansach, globalnych przykładów (USDC, USDT, EURC) oraz barier i braku dojrzałych rozwiązań dla polskiego złotego (PLN)."
+lang: "pl"
 ---
 
 Kiedy słyszymy hasło „kryptowaluty”, najczęściej oczami wyobraźni widzimy Bitcoina oraz giełdowe wykresy pełne nagłych skoków i spadków. Spekulacja dominuje w przekazie medialnym, przysłaniając fakt, że technologia blockchain oferuje znacznie szersze i bardziej pragmatyczne zastosowania.
