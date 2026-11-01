@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-10-30T10:00:00Z
+pubDatetime: 2026-11-01T10:00:00Z
 title: "Cel ponad wszystko: Dlaczego „opisanie systemu” to największa pułapka dokumentacji IT"
 slug: cel-ponad-wszystko-pulapka-dokumentacji-it
 draft: false
