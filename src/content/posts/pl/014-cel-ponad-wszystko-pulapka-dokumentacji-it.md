@@ -41,6 +41,9 @@ Wyobraź sobie mapę terenu, której celem byłoby „opisanie terenu”. Pomyś
 
 ![Mapa zawierająca za dużo szczegółów](/assets/014_PL_MAPA_GEO.png)
 
+![Mapa zawierająca za dużo szczegółów](../../public/assets/014_PL_MAPA_GEO.png)
+
+
 
 ### Sztuka eliminacji: Co pomijamy?
 
