@@ -1,7 +1,7 @@
 ---
 author: Damian Cebulak
 pubDatetime: 2026-10-28T09:00:00Z
-title: "Dlaczego BPMN to coś więcej niż rysowanie diagramów? Rola notacji w nowoczesnej Analizie Biznesowej"
+title: "Dlaczego BPMN to coś więcej niż rysowanie diagramów? Rola notacji w nowych i starych projektach IT"
 slug: dlaczego-bpmn-w-analizie-biznesowej
 draft: false
 tags: [business-analysis, process-modeling, bpmn]
