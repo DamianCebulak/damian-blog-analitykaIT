@@ -37,7 +37,7 @@ Najciekawiej, a zarazem najbardziej ryzykownie, robi się w przypadku dokumentac
 
 To klasyczna pułapka. **„Opisanie systemu” nie jest celem operacyjnym.** Z takim założeniem bardzo szybko generujemy tony tekstu, z którym później nikt nie wie, co zrobić i które uaktualnia się kosztem ogromnego nakładu pracy przy każdej zmianie.
 
-Wyobraź sobie mapę terenu, której celem byłoby „opisanie terenu”. Pomyśl o szczegółowym widoku z Geoportalu, gdzie zaprezentowano setki warstw danych: od sieci uzbrojenia terenu po dokładne pokrycie biologiczne. Gdybyś wrzucił taki widok do nawigacji samochodowej, nadmiar szczegółów uniemożliwiałby szybkie podejmowanie kluczowych decyzji na drodze. Taka mapa spełnia swoje zadanie, opisując teren, ale dla kierowcy jest bezużyteczna. Podobnie jest z dokumentacją IT: bez wyraźnego celu staje się martwym balastem. 
+Wyobraź sobie mapę terenu, której celem byłoby „opisanie terenu”. Pomyśl o szczegółowym widoku z Geoportalu, gdzie zaprezentowano setki warstw danych: od sieci uzbrojenia terenu po dokładne pokrycie biologiczne. Gdybyś wrzucił taki widok do nawigacji samochodowej, nadmiar szczegółów uniemożliwiałby szybkie podejmowanie kluczowych decyzji na drodze. Taka mapa spełnia swoje zadanie, opisując teren, ale dla kierowcy jest bezużyteczna. Podobnie jest z dokumentacją IT: bez wyraźnego celu staje się balastem. 
 
 ![Mapa zawierająca za dużo szczegółów](/assets/014_PL_MAPA_GEO.png)
 
