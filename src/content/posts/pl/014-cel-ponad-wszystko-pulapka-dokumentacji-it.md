@@ -39,7 +39,8 @@ To klasyczna pułapka. **„Opisanie systemu” nie jest celem operacyjnym.** Z 
 
 Wyobraź sobie mapę terenu, której celem byłoby „opisanie terenu”. Pomyśl o szczegółowym widoku z Geoportalu, gdzie zaprezentowano setki warstw danych: od sieci uzbrojenia terenu po dokładne pokrycie biologiczne. Gdybyś wrzucił taki widok do nawigacji samochodowej, nadmiar szczegółów uniemożliwiałby szybkie podejmowanie kluczowych decyzji na drodze. Taka mapa spełnia swoje zadanie, opisując teren, ale dla kierowcy jest bezużyteczna. Podobnie jest z dokumentacją IT: bez wyraźnego celu staje się martwym balastem. 
 
-![Mapa zawierająca za dużo szczegółów](/src/content/posts/assets/014_PL_MAPA_GEO.png)
+![Mapa zawierająca za dużo szczegółów](/assets/014_PL_MAPA_GEO.png)
+
 
 ### Sztuka eliminacji: Co pomijamy?
 
