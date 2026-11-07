@@ -1,3 +1,4 @@
+---
 author: Damian Cebulak
 pubDatetime: 2026-11-09T07:39:00Z
 title: "Anatomia chaosu: to nie wiek systemu generuje dług technologiczny?"
