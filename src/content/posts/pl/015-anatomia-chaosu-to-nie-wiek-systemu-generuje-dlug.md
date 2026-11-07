@@ -6,6 +6,7 @@ slug: anatomia-chaosu-to-nie-wiek-systemu-generuje-dlug
 draft: false
 tags: [systems-thinking, system, core-banking, cobol]
 description: "Analiza przyczyn powstawania długu technologicznego. Dlaczego AI i chmura mogą go powiększać oraz jak budować systemy oporne na chaos dzięki Architekturze Ewolucyjnej."
+lang: "pl"
 ---
 
 Systemy **legacy** bywają potężnym źródłem uciążliwości dla organizacji, a rynkowe raporty diagnozują, że z wiekiem znacząco rośnie ryzyko masowego narastania **długu technologicznego**. Skala problemu jest porażająca – jak szacuje Accenture, tylko w USA dług technologiczny kosztuje gospodarkę 2,41 biliona dolarów rocznie, a w sektorze bankowym bieżące utrzymanie systemów potrafi pochłonąć nawet **do 70% całkowitych budżetów IT**.
