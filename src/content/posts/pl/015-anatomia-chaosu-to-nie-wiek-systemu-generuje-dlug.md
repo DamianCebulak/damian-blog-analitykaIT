@@ -4,7 +4,7 @@ pubDatetime: 2026-11-09T07:39:00Z
 title: "Anatomia chaosu: to nie wiek systemu generuje dług technologiczny?"
 slug: anatomia-chaosu-to-nie-wiek-systemu-generuje-dlug
 draft: false
-tags: [systems-thinking, system-architecture, core-banking, cobol]
+tags: [core-banking, software-architecture, cobol, systems-thinking]
 description: "Analiza przyczyn powstawania długu technologicznego. Dlaczego AI i chmura mogą go powiększać oraz jak budować systemy oporne na chaos dzięki Architekturze Ewolucyjnej."
 lang: "pl"
 ---
