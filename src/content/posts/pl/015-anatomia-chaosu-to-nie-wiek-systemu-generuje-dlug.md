@@ -63,7 +63,7 @@ Lekarstwem na technologiczny paraliż nie jest samo „przepisywanie do chmury�
 
 ---
 ## Bibliografia
-Tekst powstał na podstawie Raportu: (Accenture Banking Top Trends 2026)[https://www.accenture.com/content/dam/accenture/final/industry/banking/document/Banking-Top-Trends-FY26-Report-Final.pdf]
+Tekst powstał na podstawie Raportu: [Accenture Banking Top Trends 2026](https://www.accenture.com/content/dam/accenture/final/industry/banking/document/Banking-Top-Trends-FY26-Report-Final.pdf)
 
 ---
 ## Zobacz jeszcze
