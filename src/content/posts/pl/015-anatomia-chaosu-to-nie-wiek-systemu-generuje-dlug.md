@@ -61,6 +61,15 @@ Uciążliwość systemów legacy wynika w mniejszym stopniu z ich metryki, a w n
 
 Lekarstwem na technologiczny paraliż nie jest samo „przepisywanie do chmury” ani wdrażanie naprędce niedopieczonych MVP. Prawdziwą odporność systemów centralnych buduje się poprzez odrzucenie kultury „projektowania na akord” na rzecz **Architektury Ewolucyjnej** i strukturalnych Baz Wiedzy, systematycznie alokując zalecane 15% budżetu na **„higienę”** i spłatę architektonicznego długu. W takim, uporządkowanym modelu AI przestaje być generatorem radosnego chaosu, a staje się efektywnym wzmacniaczem kompetencji zespołów IT.
 
+---
+## Bibliografia
+Tekst powstał na podstawie Raportu: (Accenture Banking Top Trends 2026)[https://www.accenture.com/content/dam/accenture/final/industry/banking/document/Banking-Top-Trends-FY26-Report-Final.pdf]
+
+---
+## Zobacz jeszcze
+* (Jak modułowość systemu pomaga walczyć z długiem technologicznym)[https://www.dcebulak.pl/posts/009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy/]
+* (Jak dobra dokumentacja pomaga walczyć z chaosem)[https://www.dcebulak.pl/posts/cel-ponad-wszystko-pulapka-dokumentacji-it/]
+
 ***
 
 *Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi refleksjami na temat architektury systemów, długu technologicznego i inżynierii procesów biznesowych.*
