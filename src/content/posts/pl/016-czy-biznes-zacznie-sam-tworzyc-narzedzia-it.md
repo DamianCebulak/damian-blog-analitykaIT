@@ -51,6 +51,13 @@ Dzisiejszy entuzjazm wokół generatywnej sztucznej inteligencji i obietnice, ż
 
 Narzędzia AI drastycznie ułatwiają nam pisanie kodu oraz wspierają pracę w wielu obszarach, ale interfejs w języku naturalnym nie zastąpi rygoru inżynieryjnego. Prawdziwym wyzwaniem w tworzeniu oprogramowania nigdy nie była sama składnia – było nim i pozostaje myślenie systemowe (*Systems Thinking*), analiza przypadków brzegowych oraz świadome projektowanie architektury.
 
+--
+## Szukasz czegoś więcej?
+* Zobacz [dlaczego w erze AI nadal używa się COBOLa](https://www.dcebulak.pl/posts/zelazne-fundamenty-cyfrowego-swiata-c-fortran-cobol/)
+* Zobacz [czym różni się tworzenie architektury systemów ERP i CRM od core-banking'u](https://www.dcebulak.pl/posts/pulapka-kopiowania-wzorcow-kontekst-architektoniczny/)
+* Jeżeli szukasz czegos o nowwych rozwiązaniach, to zobacz [jak działa architektura blockchain](https://www.dcebulak.pl/posts/architektura-bez-administratora-blockchain-bezpieczenstwo-it/)
+
+
 ***
 
 *Notatka jest częścią cyfrowego ogrodu. Będzie ewoluować wraz z kolejnymi refleksjami na temat ewolucji oprogramowania, długu technologicznego i inżynierii procesów biznesowych.*
