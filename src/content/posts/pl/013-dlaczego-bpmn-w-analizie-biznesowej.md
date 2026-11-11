@@ -70,6 +70,11 @@ Oczywiście wyżej opisane korzyści teoretycznie można osiągnąć przy użyci
 
 Warto na koniec pamiętać o kluczowej zasadzie: żadna notacja ani zaawansowane narzędzie samo w sobie nie zagwarantuje poprawności analizy czy sukcesu całego rozwiązania. Może w tym niezwykle pomóc, ale ostatecznie najważniejszy pozostaje czynnik ludzki, kompetencje analityczne i zdrowy rozsądek.
 
+---
+## Szukasz czegoś więcej?
+* Zobacz [jak prawidłowo podejść do tworzenia dokumentacji systemu](https://www.dcebulak.pl/posts/cel-ponad-wszystko-pulapka-dokumentacji-it/)
+* Sprawdź [o czym rozmawiali analitycy biznesowi podczas IIBA Poland Summit 2026](https://www.dcebulak.pl/posts/008-podsumowanie-iiba-poland-summit-2026/)
+
 ***
 
 *Wpis jest częścią cyfrowego ogrodu. Będzie ewoluował wraz z kolejnymi refleksjami na temat modelowania procesów i dobrych praktyk w Analizie Biznesowej.*
