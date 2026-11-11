@@ -67,8 +67,8 @@ Tekst powstał na podstawie Raportu: [Accenture Banking Top Trends 2026](https:/
 
 ---
 ## Zobacz jeszcze
-* (Jak modułowość systemu pomaga walczyć z długiem technologicznym)[https://www.dcebulak.pl/posts/009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy/]
-* (Jak dobra dokumentacja pomaga walczyć z chaosem)[https://www.dcebulak.pl/posts/cel-ponad-wszystko-pulapka-dokumentacji-it/]
+* [Jak modułowość systemu pomaga walczyć z długiem technologicznym](https://www.dcebulak.pl/posts/009-inzynieria-kompromisu-czym-jest-pseudomodulowosc-w-systemach-legacy/)
+* [Jak dobra dokumentacja pomaga walczyć z chaosem](https://www.dcebulak.pl/posts/cel-ponad-wszystko-pulapka-dokumentacji-it/)
 
 ***
 
