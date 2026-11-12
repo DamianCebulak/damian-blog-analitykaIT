@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-11-12T08:34:00Z
+pubDatetime: 2026-11-12T08:44:00Z
 title: "Czy biznes zacznie sam tworzyć swoje narzędzia IT?"
 slug: czy-biznes-zacznie-sam-tworzyc-narzedzia-it
 draft: false
