@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-11-16T13:00:00Z
+pubDatetime: 2026-11-16T11:00:00Z
 title: "Gdy wiedza o systemie zniknęła: Jak AI wspiera wsteczną inżynierię systemów legacy"
 slug: gdy-wiedza-zniknela-ai-wsteczna-inzynieria-legacy
 draft: false
