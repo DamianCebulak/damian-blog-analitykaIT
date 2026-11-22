@@ -9,9 +9,9 @@ description: "Dług technologiczny to tylko wierzchołek góry lodowej. Odkryj n
 lang: "pl"
 ---
 
-Dług technologiczny to jedno z tych pojęć, które doskonale brzmią na konferencjach i spotkaniach zarządczych. Chętnie straszymy nim biznes, mobilizujemy zespoły deweloperskie i uzasadniamy potrzebę refaktoryzacji. Problem polega na tym, że w przeciwieństwie do długu finansowego, nie znajdziemy żadnego konta bankowego, które wskaże nam dokładną kwotę do spłaty. W efekcie każdy wie, że „jakiś dług mamy”, ale nikt do końca nie jest pewien, co i jak właściwie spłacać.
+Dług technologiczny to jedno z tych pojęć, które doskonale brzmią na konferencjach i prezentacjach. Chętnie straszy się nim biznes, mobilizuje zespoły deweloperskie i uzasadnia potrzebę refaktoryzacji. Problem polega na tym, że w przeciwieństwie do długu finansowego, nie znajdziemy żadnego konta bankowego, które wskaże nam dokładną kwotę do spłaty. W efekcie każdy wie, że „jakiś dług mamy”, ale nikt do końca nie jest pewien, co i jak właściwie spłacać.
 
-W tym wpisie nie będę skupiał się na wyliczaniu długu w mankamentach kodu. Chcę przyjrzeć się jego granicom i pokazać, że zrozumienie tego zjawiska nie sprowadza się wyłącznie do szybkiego wdrażania zmian na skróty. Za klasycznym długiem technicznym kryje się bowiem znacznie więcej warstw.
+W tym wpisie nie będę skupiał się na sposobie wyliczania długu. Chcę raczej przyjrzeć się jego granicom i pokazać, że zrozumienie tego zjawiska nie sprowadza się wyłącznie do bycia wynikiem skrótów przy szybkim wdrażaniu zmian. Za klasycznym długiem technicznym kryje się bowiem znacznie więcej warstw.
 
 ---
 
@@ -19,7 +19,7 @@ W tym wpisie nie będę skupiał się na wyliczaniu długu w mankamentach kodu. 
 
 Gdy spoglądamy na architekturę systemów przez pryzmat codziennej pracy, okazuje się, że pod pojęciem długu technologicznego kryje się cała struktura powiązanych problemów. Jak wynika z analizy architektury systemowej, pod powierzchnią tradycyjnego długu rosną inne, równie groźne zobowiązania:
 
-### 1. Dług techniczny: Wierzchołek góry lodowej w kodzie
+### 1. Dług techniczny: Wierzchołek góry lodowej
 
 To najbardziej intuicyjna i najgłośniejsza forma długu. Widać go bezpośrednio w kodzie źródłowym – na przykład w postaci zduplikowanych funkcjonalności, przestarzałych bibliotek, prowizorycznych obejść (*workarounds*) czy naruszeń zasad czystej architektury.
 
@@ -44,7 +44,7 @@ Najgłębiej ukrytym, a zarazem najbardziej podstępnym kosztem jest dług inten
 
 ## Podsumowanie: Dlaczego musimy spojrzeć szerzej?
 
-Traktowanie długu technologicznego wyłącznie jako „brudnego kodu” to pułapka. Prawdziwe koszty rosną wtedy, gdy tracimy spójność architektoniczną (dług poznawczy) oraz gdy gubimy uzasadnienia biznesowe podjętych decyzji (dług intencji).
+Traktowanie długu technologicznego wyłącznie jako „brudnego kodu” to pułapka. Prawdziwe koszty rosną wtedy, gdy tracimy spójność architektoniczną (dług poznawczy) oraz gdy gubimy uzasadnienia biznesowe podjętych decyzji (dług intencji). Takie długi sączesto przemilczane, bo wymaga to duzej dojrzałości aby przyznać się, że się czegoś nie wie. A jeszcze większej dojrzałości wymaga od zarządzający umiejętne przyjęcie informacji o tym, że jakaś wiedzą o ich systemie odpłynął.
 
 Zamiast bezrefleksyjnie gonić za usuwaniem każdej linii prowizorycznego kodu, warto najpierw odpowiedzieć sobie na pytanie: **jakie inne długi generujemy w tym samym czasie w naszych zespołach i dokumentacji?**
 
