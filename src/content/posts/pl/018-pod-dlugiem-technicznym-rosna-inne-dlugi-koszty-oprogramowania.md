@@ -40,6 +40,8 @@ Najgłębiej ukrytym, a zarazem najbardziej podstępnym kosztem jest dług inten
 * **Kto spłaca:** Analitycy, próbujący dotrzeć do sedna wymagań i odtworzyć kontekst historyczny projektu.
 * **Charakterystyka:** Bez wyraźnie zapisanej intencji kolejni twórcy zaczynają traktować tymczasowe obejścia jako docelowe reguły biznesowe, powielając i utrwalając przypadkowe decyzje. Kod odpowiada na pytanie, *jak* coś jest zrobione, ale dług intencji sprawia, że gubimy odpowiedź na kluczowe pytanie: *dlaczego* podjęto akurat taki wybór i jakie alternatywy odrzucono.
 
+W mojej opini jest to najgorszy rodzaj długu. W pozostalych przypadkach jest teoretyczna możliwość analizy kodu, aby znaleźć dług technologiczny lub aby poznać sposób jego działania.  Do tego narzędzia AI mogą mocno wesprzeć takie działanie. Jednak utrata celu wymaga analizy wychodzącej poza system. Niekiedy trzeba sprawdzić dzialanie całego ekosystemu albo nawet wejść w procesy biznesowe oraz interpretację prawa.
+
 ---
 
 ## Podsumowanie: Dlaczego musimy spojrzeć szerzej?
