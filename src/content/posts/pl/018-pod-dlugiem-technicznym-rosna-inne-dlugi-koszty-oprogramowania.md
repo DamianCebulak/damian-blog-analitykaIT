@@ -1,6 +1,6 @@
 ---
 author: Damian Cebulak
-pubDatetime: 2026-11-23T09:00:00Z
+pubDatetime: 2026-11-23T09:20:00Z
 title: "Pod długiem technicznym rosną inne długi: Jak zrozumieć niewidoczne koszty oprogramowania"
 slug: pod-dlugiem-technicznym-rosna-inne-dlugi-koszty-oprogramowania
 draft: false
